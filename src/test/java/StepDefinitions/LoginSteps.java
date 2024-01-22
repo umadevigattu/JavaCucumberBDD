@@ -38,15 +38,17 @@ public class LoginSteps extends BaseTest {
 	@And("Click on Login button")
 	public void Click_on_Login_button() throws Exception {
 		loginpage.ClickLogin();
-		/*
-		 * WebElement homepage =
-		 * driver.findElement(By.xpath("//a[text()='Find a Doctor']")); if
-		 * (homepage.isDisplayed() == true) { asserts.assertEquals(homepage, "Sign in");
-		 * System.out.println("Valid_UserName_Valid_Password " +
-		 * Thread.currentThread().getId() + "Passed");
-		 * 
-		 * }
-		 */
+		
+		
+		  WebElement homepage =
+		  driver.findElement(By.xpath("//a[text()='Find a Doctor']")); if
+		  (homepage.isDisplayed() == true) { asserts.assertEquals(homepage, "Sign in");
+		  System.out.println("Valid_UserName_Valid_Password " +
+		  Thread.currentThread().getId() + "Passed");
+		  
+		  }
+		 
+		 
 	}
 
 	@Then("user navigates to the Homepage")
